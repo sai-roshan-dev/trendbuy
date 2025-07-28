@@ -1,0 +1,111 @@
+/* index.css */
+
+.login-form-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fbff;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Mobile Logo */
+.login-website-logo-mobile-image {
+  width: 150px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Desktop Image */
+.login-image {
+  width: 400px;
+  margin-right: 50px;
+  display: none;
+}
+
+/* Login Form Box */
+.form-container {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Desktop Logo */
+.login-website-logo-desktop-image {
+  width: 180px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+/* Input Containers */
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #2e2e2e;
+}
+
+.username-input-field,
+.password-input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cdd2d9;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.username-input-field:focus,
+.password-input-field:focus {
+  border-color: #1e90ff;
+  outline: none;
+}
+
+/* Login Button */
+.login-button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #187bcd;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+  .login-website-logo-mobile-image {
+    display: none;
+  }
+
+  .login-image {
+    display: block;
+  }
+
+  .form-container {
+    max-width: 350px;
+  }
+}

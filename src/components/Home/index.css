@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #d0f0ff, #f8fcff);
+  color: #0a1a2f;
+}
+
+/* Home Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 30px;
+  min-height: 100vh;
+  justify-content: center;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Content Card */
+.home-content {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 600px;
+  box-shadow: 0 12px 40px rgba(0, 174, 255, 0.1);
+  border: 1px solid rgba(0, 153, 255, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.home-content:hover {
+  transform: translateY(-6px);
+}
+
+/* Heading */
+.home-heading {
+  font-size: 34px;
+  color: #009edf;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Description */
+.home-description {
+  font-size: 17px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+/* Button */
+.shop-now-button {
+  background-color: #00aaff;
+  color: white;
+  font-weight: 600;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-now-button:hover {
+  background-color: #008ecc;
+  transform: scale(1.06);
+}
+
+/* Images */
+.home-mobile-img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 20px auto;
+}
+
+.home-desktop-img {
+  width: 500px;
+  display: none;
+}
+
+/* Responsive Image Switching */
+@media screen and (min-width: 768px) {
+  .home-mobile-img {
+    display: none;
+  }
+
+  .home-desktop-img {
+    display: block;
+  }
+}
+
+/* Smooth Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
