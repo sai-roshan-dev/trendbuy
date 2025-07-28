@@ -158,17 +158,6 @@ npm start
 
 ---
 
-## 📸 Screenshots
-
-_Add your screenshots here by placing them in a `/screenshots` folder and linking them below:_
-
-```markdown
-![Home Page](./screenshots/home.png)  
-![Products Page](./screenshots/products.png)
-```
-
----
-
 ## 👨‍💻 Author
 
 **Sai Roshan Neelam**  
