@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid rgba(0, 174, 255, 0.2);
-  background: linear-gradient(to right, rgba(230, 247, 255, 0.7), rgba(255, 255, 255, 0.6));
+
+  background: white;
   backdrop-filter: blur(16px);
   box-shadow: 0 6px 20px rgba(0, 132, 255, 0.08);
   position: sticky;
